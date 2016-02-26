@@ -1,7 +1,7 @@
 # webSql
 
 ##example 
-
+```javascript
 websqlConfig.application = "myApp";  
 websqlConfig.db = "myDb";  
 websqlConfig.size = 100 * 1024 * 1024;
@@ -18,4 +18,5 @@ connection.execute("SELECT * FROM users WHERE name = ?", ['wang'], (stmt) => {
   	while(record = stmt.fetch()) {  
   		console.log(record);  
   	}  
-})
+});
+```
